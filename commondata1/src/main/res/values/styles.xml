@@ -1,0 +1,310 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPhoto</item>
+    </style>
+
+    <!--通用的行高的样式-->
+    <style name="style_common_line_style">
+
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+
+    <!--宽，高,内容包裹，样式-->
+    <style name="style_width_height_wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--宽，高匹配父布局，样式-->
+    <style name="style_width_height_match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--用户个人信息item图片样式-->
+    <style name="style_image_view_user_info">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+
+    </style>
+
+    <!--用户个人信息item编辑框样式-->
+    <style name="style_edit_text_user_info" parent="style_width_height_match_parent">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginLeft">100dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textColor">@color/color_main_text_light_black</item>
+        <item name="android:textColorHint">@color/color_main_text_light_gray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--查询页面输入id的样式1-->
+    <style name="style_query_et_id">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#999999</item>
+    </style><!--查询页面输入id的样式2-->
+    <style name="style_query_et_id2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--查询页面输入性别的样式 ：与人员状态，登记日期起一致-->
+    <style name="style_query_et_sex">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:drawableRight">@mipmap/ic_arrow_down</item>
+        <item name="android:focusable">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--查询页面输入性别的样式 ：与人员状态，登记日期起一致-->
+    <style name="style_query_et_date_end">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:drawableRight">@mipmap/ic_calendar_icon</item>
+        <item name="android:focusable">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--查询页面输入民族的样式 ：与是否有效，登记日期止一致-->
+    <style name="style_query_tv_ethnic">
+
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:drawableRight">@mipmap/ic_arrow_down</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--查询页面输入民族的样式 ：与是否有效，登记日期止一致-->
+    <style name="style_query_et_ethnic_date_start">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:drawableRight">@mipmap/ic_calendar_icon</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--查询页面底部 textView 样式-->
+    <style name="style_query_tv_bottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--人像比对页面底部 textView 样式-->
+    <style name="style_people_photo_query_tv_bottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--业务 tv 基本信息样式-->
+    <style name="style_person_info_tv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--业务 ll 基本信息样式-->
+    <style name="style_person_info_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!-- 流动人口分割线（灰色）样式-->
+    <style name="style_flow_people_1_ps_line_grey">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@color/lightGray</item>
+    </style><!-- 流动人口分割线（灰色）样式 ，无margin-->
+    <style name="style_flow_people_1_ps_line_grey_no_margin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/lightGray</item>
+    </style>
+    <!--流动人口线性布局样式-->
+    <style name="style_flow_people_ll_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+    <!--流动人口左侧标题样式-->
+    <style name="style_flow_people_left_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:gravity">start|center_vertical</item>
+    </style>
+    <!--流动人口右侧内容样式-->
+
+    <style name="style_flow_peiple_right_content">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:drawableRight">@mipmap/ic_arrow_right</item>
+        <item name="android:gravity">end|center_vertical</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxEms">12</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <!--流动人口右侧内容样式——arrow down-->
+    <style name="style_flow_peiple_right_content_arrow_down">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:drawableRight">@mipmap/ic_arrow_down</item>
+        <item name="android:gravity">end|center_vertical</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxEms">12</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <!--8dp 的间隔-->
+    <style name="style_flow_people_8_dp_height_split_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">8dp</item>
+        <item name="android:background">#55cccccc</item>
+    </style>
+    <!--10dp 的间隔-->
+    <style name="style_flow_people_10_dp_height_split_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">8dp</item>
+        <item name="android:background">#55cccccc</item>
+    </style> <!--20dp 的间隔-->
+    <style name="style_flow_people_20_dp_height_split_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:background">#55cccccc</item>
+    </style>
+
+    <!--流动人口标题样式-->
+    <style name="style_flow_people_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/base_title_bg</item>
+        <item name="android:gravity">start|center_vertical</item>
+    </style>
+
+    <!--24dp 的间隔-->
+    <style name="style_flow_people_24_dp_height_split_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:background">#55cccccc</item>
+    </style>
+    <!--60dp 的间隔-->
+    <style name="style_flow_people_60_dp_height_split_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">#55cccccc</item>
+    </style>
+    <!--流动人口查询详情标题 LinearLayout样式-->
+    <style name="style_flow_people_query_detail_title_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:weightSum">2</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!--流动人口查询详情数据 LinearLayout样式-->
+    <style name="style_flow_people_query_detail_data_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!--流动人口查询详情标题 TextView样式-->
+    <style name="style_flow_people_query_detail_title_tv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <!--流动人口查询详情数据 TextView样式-->
+    <style name="style_flow_people_query_detail_data_tv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="content"
+            type="java.lang.String"/>
+
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/ivFlowPeopleManagementDetailsImg"
+                            android:scaleType="fitXY"
+                            android:layout_width="83dp"
+                            android:layout_height="83dp"
+                            android:src="@mipmap/iv_flow_people_photo_default"
+                            android:layout_marginBottom="21dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvFlowPeopleManagementDetailsName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginBottom="17dp"
+                            android:text="阿里木.买买提"
+                            android:textColor="#333333"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:id="@+id/tvFlowPeopleManagementDetailsPeopleClassify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/linearlayout_corner_bg"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="一般人员"
+                            android:textColor="#ffffff"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/tvFlowPeopleManagementDetailsSign"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginTop="-15dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_un_log_out"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:background="@color/lightGray">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:text="该人员已登记"
+                    android:textColor="#009cff"
+                    android:drawablePadding="2dp"
+                    android:drawableLeft="@mipmap/iv_flow_people_added"
+                    />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="12dp"
+                    android:text="基本信息"
+                    android:textColor="#009cff"/>
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey_no_margin"/>
+
+                <LinearLayout
+                    style="@style/style_flow_people_query_detail_title_ll">
+
+                    <TextView
+                        style="@style/style_flow_people_query_detail_title_tv"
+                        android:layout_marginLeft="12dp"
+                        android:text="身份证号码"
+                        />
+
+                    <TextView
+                        style="@style/style_flow_people_query_detail_title_tv"
+                        android:text="性别"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/style_flow_people_query_detail_data_ll">
+
+                    <TextView
+                        android:id="@+id/tvFlowPeopleManagementDetailsId"
+                        style="@style/style_flow_people_query_detail_data_tv"
+                        android:layout_marginLeft="12dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvFlowPeopleManagementDetailsSex"
+                        style="@style/style_flow_people_query_detail_data_tv"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/style_flow_people_query_detail_title_ll">
+
+                    <TextView
+                        style="@style/style_flow_people_query_detail_title_tv"
+                        android:layout_marginLeft="12dp"
+                        android:text="民族"
+                        />
+
+                    <TextView
+                        style="@style/style_flow_people_query_detail_title_tv"
+                        android:text="出生日期"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/style_flow_people_query_detail_data_ll">
+
+                    <TextView
+                        android:id="@+id/tvFlowPeopleManagementDetailsNation"
+                        style="@style/style_flow_people_query_detail_data_tv"
+                        android:layout_marginLeft="12dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvFlowPeopleManagementDetailsBirthData"
+                        style="@style/style_flow_people_query_detail_data_tv"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/style_flow_people_query_detail_title_ll">
+
+                    <TextView
+                        style="@style/style_flow_people_query_detail_title_tv"
+                        android:layout_marginLeft="12dp"
+                        android:text="身高"
+                        />
+
+                    <TextView
+                        style="@style/style_flow_people_query_detail_title_tv"
+                        android:text="血型"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/style_flow_people_query_detail_data_ll">
+
+                    <TextView
+                        android:id="@+id/tvFlowPeopleManagementDetailsStature"
+                        style="@style/style_flow_people_query_detail_data_tv"
+                        android:layout_marginLeft="12dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvFlowPeopleManagementDetailsBloodType"
+                        style="@style/style_flow_people_query_detail_data_tv"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/style_flow_people_query_detail_title_ll">
+
+                    <TextView
+                        style="@style/style_flow_people_query_detail_title_tv"
+                        android:layout_marginLeft="12dp"
+                        android:text="文化程度"
+                        />
+
+                    <TextView
+                        style="@style/style_flow_people_query_detail_title_tv"
+                        android:text="婚姻状况"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/style_flow_people_query_detail_data_ll">
+
+                    <TextView
+                        android:id="@+id/tvFlowPeopleManagementDetailsEduLevel"
+                        style="@style/style_flow_people_query_detail_data_tv"
+                        android:layout_marginLeft="12dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvFlowPeopleManagementDetailsBmaritalStatus"
+                        style="@style/style_flow_people_query_detail_data_tv"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                style="@style/style_flow_people_query_detail_title_ll">
+
+                <TextView
+                    style="@style/style_flow_people_query_detail_title_tv"
+                    android:layout_marginLeft="12dp"
+                    android:text="政治面貌"
+                    />
+
+                <TextView
+                    style="@style/style_flow_people_query_detail_title_tv"
+                    android:text="职业"
+                    />
+            </LinearLayout>
+
+                <LinearLayout
+                    style="@style/style_flow_people_query_detail_data_ll">
+
+                    <TextView
+                        android:id="@+id/tvFlowPeopleManagementDetailsPoliticsStatus"
+                        style="@style/style_flow_people_query_detail_data_tv"
+                        android:layout_marginLeft="12dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvFlowPeopleManagementDetailsWork"
+                        style="@style/style_flow_people_query_detail_data_tv"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center_vertical"
+                    android:text="服务处所"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tvFlowPeopleManagementDetailsPermanentServiceSpace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center_vertical"
+                    android:text="户籍地址"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tvFlowPeopleManagementDetailsPermanentAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center_vertical"
+                    android:text="户籍责任区单位"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tvFlowPeopleManagementDetailsRegistrationtHouseholdUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"/>
+                <LinearLayout
+                    style="@style/style_flow_people_query_detail_title_ll">
+
+                    <TextView
+                        style="@style/style_flow_people_query_detail_title_tv"
+                        android:layout_marginLeft="12dp"
+                        android:text="警务室民警联系电话"
+                        />
+
+                    <TextView
+                        style="@style/style_flow_people_query_detail_title_tv"
+                        android:text="社区干部联系电话"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/style_flow_people_query_detail_data_ll">
+
+                    <TextView
+                        android:id="@+id/tvFlowPeopleManagementDetailsPoliceRoomPhone"
+                        style="@style/style_flow_people_query_detail_data_tv"
+                        android:layout_marginLeft="12dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvFlowPeopleManagementDetailsCommunityPhone"
+                        style="@style/style_flow_people_query_detail_data_tv"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center_vertical"
+                    android:text="户籍责任区社区"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tvFlowPeopleManagementDetailsRegistrationtHouseholdCommunity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"/>
+
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey_no_margin"/>
+
+                <TextView
+                    android:id="@+id/tvViewMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="点击查看更多详情"
+                    android:textColor="#009CFF"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_marginBottom="2dp"
+                    style="@style/style_flow_people_1_ps_line_grey_no_margin"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">-->
+
+            <!--<Button-->
+            <!--android:id="@+id/bt_move_people_management_register"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@android:color/holo_blue_dark"-->
+            <!--android:text="登记"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="20sp"/>-->
+
+           <!-- <Button
+                android:id="@+id/bt_move_people_management_log_out"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:text="注销"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+        </LinearLayout>-->
+
+    </RelativeLayout>
+</layout>
+

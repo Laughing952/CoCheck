@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设置-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--使用说明-->
+        <RelativeLayout
+            android:id="@+id/rl_my_center_setting_read_me"
+            style="@style/style_common_line_style"
+            android:layout_width="match_parent"
+            android:background="@color/color_main_bg_white"
+            android:onClick="@{click}">
+
+            <ImageView
+                android:id="@+id/iv_my_center_setting_read_me"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/tv_my_center_setting_update_app"
+                />
+
+            <TextView
+                android:id="@id/tv_my_center_setting_update_app"
+                style="@style/style_width_height_wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toRightOf="@id/iv_my_center_setting_read_me"
+                android:text="使用说明"
+                android:textColor="@color/color_main_text_light_black"
+                android:textSize="16sp"/>
+
+            <ImageView
+                style="@style/style_width_height_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_arrow_right"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/style_flow_people_1_ps_line_grey"></View>
+        <!--版本更新-->
+        <RelativeLayout
+            android:id="@+id/rl_my_center_setting_update_app"
+            style="@style/style_common_line_style"
+            android:layout_width="match_parent"
+            android:background="@color/color_main_bg_white"
+            android:onClick="@{click}">
+
+            <ImageView
+                android:id="@+id/iv_my_center_setting_update_app"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/tv_my_center_setting_update_app"
+                />
+
+            <TextView
+                android:id="@id/tv_my_center_setting_update_app"
+                style="@style/style_width_height_wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toRightOf="@id/iv_my_center_setting_update_app"
+                android:text="版本更新"
+                android:textColor="@color/color_main_text_light_black"
+                android:textSize="16sp"/>
+
+            <ImageView
+                style="@style/style_width_height_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_arrow_right"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/style_flow_people_1_ps_line_grey"></View>
+
+        <!--退出登录-->
+        <RelativeLayout
+            android:id="@+id/rl_my_center_setting_log_out"
+            style="@style/style_common_line_style"
+            android:layout_width="match_parent"
+            android:background="@color/color_main_bg_white"
+            android:onClick="@{click}">
+
+            <ImageView
+                android:id="@+id/iv_my_center_setting_log_out"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/tv_my_center_setting_log_out"
+                />
+
+            <TextView
+                android:id="@id/tv_my_center_setting_log_out"
+                style="@style/style_width_height_wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toRightOf="@id/iv_my_center_setting_log_out"
+                android:text="退出登录"
+                android:textColor="@color/color_main_text_light_black"
+                android:textSize="16sp"/>
+
+            <ImageView
+                style="@style/style_width_height_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_arrow_right"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/style_flow_people_1_ps_line_grey"></View>
+    </LinearLayout>
+</layout>

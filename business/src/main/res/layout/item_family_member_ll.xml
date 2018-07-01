@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="家庭成员"
+        android:textColor="@color/base_title_bg"/>
+
+    <View
+        style="@style/style_flow_people_1_ps_line_grey_no_margin"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/linearlayout_corner_bg"
+            android:ems="1"
+            android:padding="2dp"
+            android:text="户主"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/style_person_info_ll">
+
+                <TextView
+                    style="@style/style_person_info_tv"
+                    android:text="阿里木*买买提"
+                    android:textColor="@color/bg_person_info_gray"/>
+
+                <TextView
+                    style="@style/style_person_info_tv"
+                    android:layout_marginRight="5dp"
+                    android:gravity="end"
+                    android:text="维吾尔族"
+                    android:textColor="@color/bg_person_info_gray"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_person_info_ll">
+
+                <TextView
+                    style="@style/style_person_info_tv"
+                    android:text="1990-10-25"
+                    android:textColor="@color/bg_person_info_gray"
+                    />
+
+                <TextView
+                    style="@style/style_person_info_tv"
+                    android:layout_marginRight="5dp"
+                    android:gravity="end"
+                    android:text="199-9999-0000"
+                    android:textColor="@color/bg_person_info_gray"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/style_flow_people_1_ps_line_grey_no_margin"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/linearlayout_corner_bg"
+            android:ems="1"
+            android:padding="2dp"
+            android:text="妻子"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/style_person_info_ll">
+
+                <TextView
+                    style="@style/style_person_info_tv"
+                    android:text="缪李*买买提"
+                    android:textColor="@color/bg_person_info_gray"/>
+
+                <TextView
+                    style="@style/style_person_info_tv"
+                    android:layout_marginRight="5dp"
+                    android:gravity="end"
+                    android:text="维吾尔族"
+                    android:textColor="@color/bg_person_info_gray"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_person_info_ll">
+
+                <TextView
+                    style="@style/style_person_info_tv"
+                    android:text="1990-10-25"
+                    android:textColor="@color/bg_person_info_gray"
+                    />
+
+                <TextView
+                    style="@style/style_person_info_tv"
+                    android:layout_marginRight="5dp"
+                    android:gravity="end"
+                    android:text="199-9999-0000"
+                    android:textColor="@color/bg_person_info_gray"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/style_flow_people_1_ps_line_grey_no_margin"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/linearlayout_corner_bg"
+            android:ems="1"
+            android:padding="2dp"
+            android:text="长子"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/style_person_info_ll">
+
+                <TextView
+                    style="@style/style_person_info_tv"
+                    android:text="尼格拉*买买提"
+                    android:textColor="@color/bg_person_info_gray"/>
+
+                <TextView
+                    style="@style/style_person_info_tv"
+                    android:layout_marginRight="5dp"
+                    android:gravity="end"
+                    android:text="维吾尔族"
+                    android:textColor="@color/bg_person_info_gray"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_person_info_ll">
+
+                <TextView
+                    style="@style/style_person_info_tv"
+                    android:text="1990-10-25"
+                    android:textColor="@color/bg_person_info_gray"
+                    />
+
+                <TextView
+                    style="@style/style_person_info_tv"
+                    android:layout_marginRight="5dp"
+                    android:gravity="end"
+                    android:text="199-9999-0000"
+                    android:textColor="@color/bg_person_info_gray"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

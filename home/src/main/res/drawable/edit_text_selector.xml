@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--&lt;!&ndash; 设置描边 &ndash;&gt;-->
+    <!--&lt;!&ndash; 默认时的背景图片&ndash;&gt;-->
+    <!--<item android:drawable="@color/white"/>-->
+    <item android:drawable="@drawable/oval_stroke_login_input_bg_new" android:state_focused="false"/>
+    <item android:drawable="@drawable/oval_stroke_login_input_bg_new_select" android:state_focused="true"/>
+</selector>

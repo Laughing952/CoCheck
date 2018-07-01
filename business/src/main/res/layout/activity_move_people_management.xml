@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="content"
+            type="java.lang.String" />
+
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener" />
+    </data>
+    <!--流动人口管理-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--流动人口登记-->
+        <RelativeLayout
+            android:id="@+id/rl_move_people_registration"
+            style="@style/style_common_line_style"
+            android:layout_width="match_parent"
+            android:background="@color/color_main_bg_white"
+            android:onClick="@{click}">
+
+            <ImageView
+                android:id="@+id/iv_move_people_registration"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/move_people_registration"
+                android:src="@mipmap/ic_head_normal" />
+
+            <TextView
+                android:id="@+id/move_people_registration"
+                style="@style/style_width_height_wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toRightOf="@id/iv_move_people_registration"
+                android:text="流动人口登记"
+                android:textColor="@color/color_main_text_light_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                style="@style/style_width_height_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pic_arrows_right" />
+
+        </RelativeLayout>
+
+        <View style="@style/style_flow_people_1_ps_line_grey"></View>
+        <!--流动人口查询-->
+        <RelativeLayout
+            android:id="@+id/rl_move_people_query"
+            style="@style/style_common_line_style"
+            android:layout_width="match_parent"
+            android:background="@color/color_main_bg_white"
+            android:onClick="@{click}">
+
+            <ImageView
+                android:id="@+id/iv_move_people_query"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/move_people_query"
+                android:src="@mipmap/ic_head_normal" />
+
+            <TextView
+                android:id="@+id/move_people_query"
+                style="@style/style_width_height_wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toRightOf="@id/iv_move_people_query"
+                android:text="流动人口查询"
+                android:textColor="@color/color_main_text_light_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                style="@style/style_width_height_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pic_arrows_right" />
+
+        </RelativeLayout>
+
+        <View style="@style/style_flow_people_1_ps_line_grey"></View>
+
+        <!--流动人口注销-->
+        <RelativeLayout
+            android:id="@+id/rl_move_people_log_out"
+            style="@style/style_common_line_style"
+            android:layout_width="match_parent"
+            android:background="@color/color_main_bg_white"
+            android:onClick="@{click}">
+
+            <ImageView
+                android:id="@+id/iv_move_people_log_out"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/move_people_log_out"
+                android:src="@mipmap/ic_head_normal" />
+
+            <TextView
+                android:id="@+id/move_people_log_out"
+                style="@style/style_width_height_wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toRightOf="@id/iv_move_people_log_out"
+                android:text="流动人口注销"
+                android:textColor="@color/color_main_text_light_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                style="@style/style_width_height_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pic_arrows_right" />
+
+        </RelativeLayout>
+
+        <View style="@style/style_flow_people_1_ps_line_grey"></View>
+
+        <!--流动人口编辑-->
+        <RelativeLayout
+            android:id="@+id/rl_move_people_edit"
+            style="@style/style_common_line_style"
+            android:layout_width="match_parent"
+            android:background="@color/color_main_bg_white"
+            android:onClick="@{click}">
+
+            <ImageView
+                android:id="@+id/iv_move_people_edit"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/move_people_edit"
+                android:src="@mipmap/ic_head_normal" />
+
+            <TextView
+                android:id="@+id/move_people_edit"
+                style="@style/style_width_height_wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toRightOf="@id/iv_move_people_edit"
+                android:text="流动人口编辑"
+                android:textColor="@color/color_main_text_light_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                style="@style/style_width_height_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pic_arrows_right" />
+
+        </RelativeLayout>
+
+        <View style="@style/style_flow_people_1_ps_line_grey"></View>
+
+
+    </LinearLayout>
+</layout>

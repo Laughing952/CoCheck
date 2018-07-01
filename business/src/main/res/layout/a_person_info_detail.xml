@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="isShow"
+            type="Boolean"/>
+
+        <variable
+            name="onclick"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/ll_person_info"
+                    layout="@layout/item_base_info_ll"/>
+
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey_no_margin"/>
+
+                <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@android:color/transparent"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/click_details"-->
+                <!--android:textColor="@android:color/holo_blue_bright"-->
+                <!--android:visibility="@{isShow ? View.GONE : View.VISIBLE}"-->
+                <!--android:onClick="@{onclick}"/>-->
+
+                <!--<View-->
+                <!--style="@style/style_flow_people_8_dp_height_split_line"/>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:visibility="@{isShow ? View.VISIBLE : View.GONE}">-->
+                <!--<include-->
+                <!--android:id="@+id/ll_family_info"-->
+                <!--layout="@layout/item_family_member_ll"/>-->
+
+                <!--<View-->
+                <!--style="@style/style_flow_people_1_ps_line_grey_no_margin"/>-->
+
+                <!--<View-->
+                <!--style="@style/style_flow_people_8_dp_height_split_line"/>-->
+
+                <!--<include-->
+                <!--android:id="@+id/ll_marry_info"-->
+                <!--layout="@layout/item_marry_info_ll"/>-->
+
+                <!--<View-->
+                <!--style="@style/style_flow_people_1_ps_line_grey_no_margin"/>-->
+
+                <!--<View-->
+                <!--style="@style/style_flow_people_8_dp_height_split_line"/>-->
+
+                <!--<include-->
+                <!--android:id="@+id/ll_tibetout_info"-->
+                <!--layout="@layout/item_outtibet_info_ll"/>-->
+
+                <!--<View-->
+                <!--style="@style/style_flow_people_1_ps_line_grey_no_margin"/>-->
+
+                <!--<View-->
+                <!--style="@style/style_flow_people_8_dp_height_split_line"/>-->
+
+                <!--<include-->
+                <!--android:id="@+id/ll_tubulation_info"-->
+                <!--layout="@layout/item_tubulation_info_ll"/>-->
+
+                <!--<View-->
+                <!--style="@style/style_flow_people_1_ps_line_grey_no_margin"/>-->
+
+                <!--<View-->
+                <!--style="@style/style_flow_people_8_dp_height_split_line"/>-->
+
+                <!--<include-->
+                <!--android:id="@+id/ll_involvement_info"-->
+                <!--layout="@layout/item_involvement_info_ll"/>-->
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <include
+            android:id="@+id/llBtn"
+            android:visibility="gone"
+            layout="@layout/bg_bottom"
+            />
+    </LinearLayout>
+</layout>
+
+

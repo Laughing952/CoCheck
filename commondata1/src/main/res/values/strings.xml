@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Common Data</string>
+    <string name="chooseSex">请选择性别</string>
+    <string name="dialog_select_wait">查询中...</string>
+</resources>

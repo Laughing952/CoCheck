@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="content"
+            type="java.lang.String"/>
+
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F6F8">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:background="#ffffff"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="10dp"
+                        android:src="@mipmap/ic_head_normal"/>
+                </RelativeLayout>
+
+                <View
+                    style="@style/style_flow_people_8_dp_height_split_line"></View>
+                <!--身份证等信息-->
+                <LinearLayout
+                    style="@style/style_flow_people_ll_style">
+
+                    <TextView
+                        style="@style/style_flow_people_left_title"
+                        android:text="身份证号码"/>
+
+                    <TextView
+                        android:id="@+id/tv_flow_people_edit_id"
+                        style="@style/style_flow_peiple_right_content"
+                        android:digits="0123456789xX"
+                        android:maxLength="18"
+                        android:maxLines="1"
+
+                        android:text=""
+                        />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey"></View>
+
+                <LinearLayout
+                    style="@style/style_flow_people_ll_style">
+
+                    <TextView
+                        style="@style/style_flow_people_left_title"
+                        android:text="姓名"/>
+
+                    <TextView
+                        android:id="@+id/tv_flow_people_edit_name"
+                        style="@style/style_flow_peiple_right_content"
+
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey"></View>
+
+                <LinearLayout
+                    style="@style/style_flow_people_ll_style"
+                    >
+
+                    <TextView
+                        style="@style/style_flow_people_left_title"
+                        android:text="性别"/>
+
+                    <TextView
+                        android:id="@+id/tv_flow_people_edit_sex"
+                        style="@style/style_flow_peiple_right_content"
+
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/style_flow_people_8_dp_height_split_line"></View>
+
+                <LinearLayout
+                    style="@style/style_flow_people_ll_style">
+
+                    <TextView
+                        style="@style/style_flow_people_title"
+                        android:text="流入人员信息"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey"></View>
+                <!--居住等详细信息-->
+                <LinearLayout
+                    style="@style/style_flow_people_ll_style">
+
+                    <TextView
+                        style="@style/style_flow_people_left_title"
+                        android:text="流入日期"/>
+
+                    <TextView
+                        android:id="@+id/tv_flow_people_edit_income_date"
+                        style="@style/style_flow_peiple_right_content_arrow_down"
+
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey"></View>
+
+                <LinearLayout
+                    style="@style/style_flow_people_ll_style">
+
+                    <TextView
+                        style="@style/style_flow_people_left_title"
+                        android:text="拟（居）住时间"/>
+
+                    <TextView
+                        android:id="@+id/tv_flow_people_edit_how_long"
+                        style="@style/style_flow_peiple_right_content_arrow_down"
+
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey"></View>
+
+                <LinearLayout
+                    style="@style/style_flow_people_ll_style">
+
+                    <TextView
+                        style="@style/style_flow_people_left_title"
+                        android:text="暂（居）住处所"/>
+
+                    <TextView
+                        android:id="@+id/tv_flow_people_edit_temp_home"
+                        style="@style/style_flow_peiple_right_content_arrow_down"
+
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey"></View>
+
+                <LinearLayout
+                    style="@style/style_flow_people_ll_style">
+
+                    <TextView
+                        style="@style/style_flow_people_left_title"
+                        android:text="暂（居）住事由"/>
+
+                    <TextView
+                        android:id="@+id/tv_flow_people_edit_why_come_here"
+                        style="@style/style_flow_peiple_right_content_arrow_down"
+
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey"></View>
+
+
+                <LinearLayout
+                    style="@style/style_flow_people_ll_style">
+
+                    <TextView
+                        style="@style/style_flow_people_left_title"
+                        android:text="从事职业"/>
+
+                    <TextView
+                        android:id="@+id/tv_flow_people_edit_work"
+                        style="@style/style_flow_peiple_right_content_arrow_down"
+
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey"></View>
+
+                <LinearLayout
+                    style="@style/style_flow_people_ll_style">
+
+                    <TextView
+                        style="@style/style_flow_people_left_title"
+                        android:text="暂（居）住省市县区"/>
+
+
+                    <EditText
+                        android:id="@+id/tv_flow_people_edit_temp_home_province"
+                        style="@style/style_flow_peiple_right_content"
+
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey"></View>
+
+                <LinearLayout
+                    style="@style/style_flow_people_ll_style">
+
+                    <TextView
+                        style="@style/style_flow_people_left_title"
+                        android:text="暂（居）住详细地址"/>
+
+                    <EditText
+                        android:id="@+id/tv_flow_people_edit_temp_home_city_detail"
+                        style="@style/style_flow_peiple_right_content"
+
+                        android:text="北京市市辖区朝阳区"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey"
+                    android:visibility="gone"></View>
+
+                <LinearLayout
+                    style="@style/style_flow_people_ll_style"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/style_flow_people_left_title"
+                        android:text="户籍地（省市区县）"/>
+
+                    <TextView
+                        android:id="@+id/tv_flow_people_edit_home"
+                        style="@style/style_flow_peiple_right_content"
+
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey"></View>
+
+                <LinearLayout
+                    style="@style/style_flow_people_ll_style"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/style_flow_people_left_title"
+                        android:text="户籍地详细地址"/>
+
+                    <TextView
+                        android:id="@+id/tv_flow_people_edit_home_detail"
+                        style="@style/style_flow_peiple_right_content"
+
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey"
+                    android:visibility="gone"></View>
+
+                <View
+                    style="@style/style_flow_people_24_dp_height_split_line"></View>
+
+                <LinearLayout
+                    style="@style/style_flow_people_ll_style">
+
+                    <TextView
+                        style="@style/style_flow_people_title"
+                        android:text="登记人信息"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey"></View>
+
+                <LinearLayout
+                    style="@style/style_flow_people_ll_style">
+
+                    <TextView
+                        style="@style/style_flow_people_left_title"
+                        android:text="登记人联系方式"/>
+
+                    <EditText
+                        android:id="@+id/tv_flow_people_edit_phone_number"
+                        style="@style/style_flow_peiple_right_content"
+                        android:autoLink="phone"
+                        android:digits="0123456789"
+                        android:maxLength="11"
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey"></View>
+
+                <LinearLayout
+                    style="@style/style_flow_people_ll_style">
+
+                    <TextView
+                        style="@style/style_flow_people_left_title"
+                        android:text="登记日期"/>
+
+                    <TextView
+                        android:id="@+id/tv_flow_people_edit_register_date"
+                        style="@style/style_flow_peiple_right_content_arrow_down"
+
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/style_flow_people_1_ps_line_grey"></View>
+
+
+                <View
+                    style="@style/style_flow_people_60_dp_height_split_line"/>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#F5F6F8"
+            >
+
+            <Button
+                android:id="@+id/tv_flow_people_edit_save"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/base_title_bg"
+                android:text="保存"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

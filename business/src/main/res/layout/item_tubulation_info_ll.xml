@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="列管信息"
+        android:textColor="@color/base_title_bg"/>
+
+    <View
+        style="@style/style_flow_people_1_ps_line_grey_no_margin"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="阿里木*买买提"/>
+
+    <LinearLayout style="@style/style_person_info_ll">
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="身份证号码"
+            android:textColor="@color/bg_person_info_gray"/>
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="人员属性"
+            android:textColor="@color/bg_person_info_gray"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_person_info_ll">
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="610000101010101010"/>
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="红名单"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_person_info_ll">
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="列管人"
+            android:textColor="@color/bg_person_info_gray"/>
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="列管日期"
+            android:textColor="@color/bg_person_info_gray"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_person_info_ll">
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="谭大芳"/>
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="2017-12-27"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:text="请销假状态"
+        android:textColor="@color/bg_person_info_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:text="未请假"/>
+
+</LinearLayout>

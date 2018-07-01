@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="businesses">
+        <item>流动人口管理</item>
+        <item>人相对比</item>
+        <item>协同管理</item>
+        <item>统计分析</item>
+    </string-array>
+
+</resources>

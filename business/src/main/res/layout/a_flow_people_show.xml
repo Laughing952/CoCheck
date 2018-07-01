@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6F8">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/ic_head_normal"/>
+            </RelativeLayout>
+
+            <!--身份证等信息-->
+            <LinearLayout
+                style="@style/style_flow_people_ll_style">
+
+                <TextView
+                    style="@style/style_flow_people_left_title"
+                    android:text="身份证号码"/>
+
+                <TextView
+                    style="@style/style_flow_peiple_right_content"
+                    android:text="61255352535232532"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/style_flow_people_1_ps_line_grey"></View>
+
+            <LinearLayout
+                style="@style/style_flow_people_ll_style">
+
+                <TextView
+                    style="@style/style_flow_people_left_title"
+                    android:text="姓名"/>
+
+                <TextView
+                    style="@style/style_flow_peiple_right_content"
+                    android:text="迪易八尔*阿合巴尔"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/style_flow_people_1_ps_line_grey"></View>
+
+            <LinearLayout
+                style="@style/style_flow_people_ll_style"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/style_flow_people_left_title"
+                    android:text="性别"/>
+
+                <TextView
+                    style="@style/style_flow_peiple_right_content"
+                    android:text="男"/>
+
+            </LinearLayout>
+
+            <!--居住等详细信息-->
+
+            <LinearLayout
+                style="@style/style_flow_people_ll_style">
+
+                <TextView
+                    style="@style/style_flow_people_left_title"
+                    android:text="暂（居）住处所"/>
+
+                <TextView
+                    style="@style/style_flow_peiple_right_content"
+                    android:text="北京市市辖区朝阳区"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/style_flow_people_1_ps_line_grey"></View>
+
+             <LinearLayout
+                style="@style/style_flow_people_ll_style">
+
+                <TextView
+                    style="@style/style_flow_people_left_title"
+                    android:text="暂（居）住事由"/>
+
+                <TextView
+                    style="@style/style_flow_peiple_right_content"
+                    android:text="因公出差"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/style_flow_people_1_ps_line_grey"></View>
+
+             <LinearLayout
+                style="@style/style_flow_people_ll_style">
+
+                <TextView
+                    style="@style/style_flow_people_left_title"
+                    android:text="流入日期"/>
+
+                <TextView
+                    style="@style/style_flow_peiple_right_content"
+                    android:text="2018-01-12"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/style_flow_people_1_ps_line_grey"></View>
+
+            <LinearLayout
+                style="@style/style_flow_people_ll_style">
+
+                <TextView
+                    style="@style/style_flow_people_left_title"
+                    android:text="拟（居）住时间"/>
+
+                <TextView
+                    style="@style/style_flow_peiple_right_content"
+                    android:text="六个月至一年"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/style_flow_people_1_ps_line_grey"></View>
+
+            <LinearLayout
+                style="@style/style_flow_people_ll_style">
+
+                <TextView
+                    style="@style/style_flow_people_left_title"
+                    android:text="从事职业"/>
+
+                <TextView
+                    style="@style/style_flow_peiple_right_content"
+                    android:text="演员、歌手"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/style_flow_people_1_ps_line_grey"></View>
+
+            <LinearLayout
+                style="@style/style_flow_people_ll_style">
+
+                <TextView
+                    style="@style/style_flow_people_left_title"
+                    android:text="户籍地（省市区县）"/>
+
+                <TextView
+                    style="@style/style_flow_peiple_right_content"
+                    android:text="新疆省鲁木齐市天山区"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/style_flow_people_1_ps_line_grey"></View>
+
+            <LinearLayout
+                style="@style/style_flow_people_ll_style">
+
+                <TextView
+                    style="@style/style_flow_people_left_title"
+                    android:text="户籍地详细地址"/>
+
+                <TextView
+                    style="@style/style_flow_peiple_right_content"
+                    android:text="新疆省鲁木齐市天山区......"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/style_flow_people_1_ps_line_grey"></View>
+
+            <LinearLayout
+                style="@style/style_flow_people_ll_style">
+
+                <TextView
+                    style="@style/style_flow_people_left_title"
+                    android:text="登记人联系方式"/>
+
+                <TextView
+                    style="@style/style_flow_peiple_right_content"
+                    android:text="188-8888-8888"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/style_flow_people_1_ps_line_grey"></View>
+
+            <LinearLayout
+                style="@style/style_flow_people_ll_style">
+
+                <TextView
+                    style="@style/style_flow_people_left_title"
+                    android:text="登记日期"/>
+
+                <TextView
+                    style="@style/style_flow_peiple_right_content"
+                    android:text="2018-01-12"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/style_flow_people_1_ps_line_grey"></View>
+
+            <LinearLayout
+                style="@style/style_flow_people_ll_style">
+
+                <TextView
+                    style="@style/style_flow_people_left_title"
+                    android:text="暂（居）住省市县区"/>
+
+                <TextView
+                    style="@style/style_flow_peiple_right_content"
+                    android:text="北京市辖区朝阳区"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/style_flow_people_1_ps_line_grey"></View>
+
+            <LinearLayout
+                style="@style/style_flow_people_ll_style">
+
+                <TextView
+                    style="@style/style_flow_people_left_title"
+                    android:text="暂（居）住详细地址"/>
+
+                <TextView
+                    style="@style/style_flow_peiple_right_content"
+                    android:text="北京市市辖区朝阳区"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F5F6F8">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/base_title_bg"
+            android:text="保存"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

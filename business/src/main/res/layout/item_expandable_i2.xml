@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@android:color/white"
+              android:layout_width="105dp"
+              android:layout_marginLeft="12dp"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+    >
+    <ImageView
+        android:id="@+id/comparison_data_image"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_width="105dp"
+        android:layout_height="105dp" />
+    <TextView
+        android:id="@+id/tv_date_input"
+        android:background="#EEF3FA"
+        android:layout_width="105dp"
+        android:layout_height="26dp"
+        android:layout_below="@id/comparison_data_image"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="#333"
+        android:text="03-29 10:10:00"
+        />
+
+</RelativeLayout>

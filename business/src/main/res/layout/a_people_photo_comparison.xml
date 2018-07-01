@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--人像比对-->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="content"
+            type="java.lang.String"/>
+
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--人像比对-->
+        <RelativeLayout
+            android:id="@+id/rl_people_photo_comparison"
+            style="@style/style_common_line_style"
+            android:layout_width="match_parent"
+            android:background="@color/color_main_bg_white"
+            android:onClick="@{click}">
+
+            <ImageView
+                android:id="@+id/iv_people_photo_comparison"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/people_photo_comparison"
+                android:src="@mipmap/ic_people_photo_comparision_little"/>
+
+            <TextView
+                android:id="@+id/people_photo_comparison"
+                style="@style/style_width_height_wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toRightOf="@id/iv_people_photo_comparison"
+                android:text="人像比对"
+                android:textColor="@color/color_main_text_light_black"
+                android:textSize="16sp"/>
+
+            <ImageView
+                style="@style/style_width_height_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_arrow_right"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/style_flow_people_1_ps_line_grey"></View>
+
+        <!--比对数据-->
+        <RelativeLayout
+            android:id="@+id/rl_comparison_data"
+            style="@style/style_common_line_style"
+            android:layout_width="match_parent"
+            android:background="@color/color_main_bg_white"
+            android:onClick="@{click}">
+
+            <ImageView
+                android:id="@+id/iv_comparison_data"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/comparison_data"
+                android:src="@mipmap/ic_comparision_data"/>
+
+            <TextView
+                android:id="@+id/comparison_data"
+                style="@style/style_width_height_wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toRightOf="@id/iv_comparison_data"
+                android:text="比对数据"
+                android:textColor="@color/color_main_text_light_black"
+                android:textSize="16sp"/>
+
+            <ImageView
+                style="@style/style_width_height_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_arrow_right"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/style_flow_people_1_ps_line_grey"></View>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/line"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_stater"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_home_bg" />
+
+            <TextView
+                android:id="@+id/tv_centent"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_below="@+id/iv" />
+
+            <TextView
+                android:id="@+id/tv_home_location"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tv_stater"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@mipmap/ic_home_location"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:hint=""
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_seach"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignBottom="@+id/tv_centent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/edit_text_selector">
+
+                <ImageView
+                    android:id="@+id/iv_seach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:src="@mipmap/ic_home_search" />
+
+                <EditText
+                    android:id="@+id/edt_home_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_seach"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:digits="0123456789xX"
+                    android:gravity="center"
+                    android:hint="请输入身份证号进行查询"
+                    android:maxLength="18"
+                    android:maxLines="1"
+                    android:paddingLeft="16dp"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_contentt"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:text="近期搜索身份证号" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_seach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="80dp"
+                android:data="{content}"
+                android:numColumns="3"
+                android:overScrollMode="never"
+                android:stretchMode="spacingWidthUniform"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

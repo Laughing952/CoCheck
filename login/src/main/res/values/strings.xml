@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="login_app_name">新疆籍流动人口协查平台</string>
+    <string name="login_user">用户名</string>
+    <string name="login_pwd">密码</string>
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用缺少必要权限。
+        请点击"设置"-"权限"-打开所需权限。
+    </string>
+    <string name="quit">退出</string>
+    <string name="settings">设置</string>
+    <string name="apk_refresh">软件更新</string>
+    <string name="new_apk_refresh">有新版本,建议更新!</string>
+    <string name="refresh">更新</string>
+    <string name="refresh_late">稍候更新</string>
+    <string name="dialog_check_version">检测版本</string>
+</resources>

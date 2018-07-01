@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="婚姻信息"
+        android:textColor="@color/base_title_bg"/>
+
+    <View
+        style="@style/style_flow_people_1_ps_line_grey_no_margin"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="缪里*买买提（配偶）"/>
+
+    <LinearLayout style="@style/style_person_info_ll">
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="身份证号码"
+            android:textColor="@color/bg_person_info_gray"/>
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="出生日期"
+            android:textColor="@color/bg_person_info_gray"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_person_info_ll">
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="610000101010101010"/>
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="1990-10-25"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_person_info_ll">
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="民族"
+            android:textColor="@color/bg_person_info_gray"/>
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="从事职业"
+            android:textColor="@color/bg_person_info_gray"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_person_info_ll">
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="维吾尔族"/>
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="律师"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:text="登记地址"
+        android:textColor="@color/bg_person_info_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:text="北京市市辖区朝阳区人民路22号2栋4单元1208号"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:text="登记日期"
+        android:textColor="@color/bg_person_info_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:text="2016-12-26"/>
+</LinearLayout>

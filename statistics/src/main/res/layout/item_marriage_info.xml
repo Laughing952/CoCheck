@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.statistics.ui.viewmodel.MarriageInfoViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@{viewModel.name}"
+            android:textSize="15sp" />
+
+        <LinearLayout  android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:text="身份证号码"
+                android:textColor="@color/bg_person_info_gray" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:text="出生日期"
+                android:textColor="@color/bg_person_info_gray" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_person_info_ll">
+
+            <TextView
+                style="@style/style_person_info_tv"
+                android:text="@{viewModel.idCardNum}" />
+
+            <TextView
+                style="@style/style_person_info_tv"
+                android:text="@{viewModel.birthday}" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:text="民族"
+                android:textColor="@color/bg_person_info_gray" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:text="从事职业"
+                android:textColor="@color/bg_person_info_gray" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_person_info_ll">
+
+            <TextView
+                style="@style/style_person_info_tv"
+                android:text="@{viewModel.nation}" />
+
+            <TextView
+                style="@style/style_person_info_tv"
+                android:text="@{viewModel.profession}" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="bottom"
+            android:text="登记住址"
+            android:textColor="@color/bg_person_info_gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text="@{viewModel.registeredAddress}"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="bottom"
+            android:text="登记日期"
+            android:textColor="@color/bg_person_info_gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:text="@{viewModel.registeredDate}"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</layout>

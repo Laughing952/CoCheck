@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--查询登记页面-->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="content"
+            type="java.lang.String"/>
+
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F6F8"
+        >
+
+        <EditText
+            android:layout_alignParentTop="true"
+            android:id="@+id/et_flow_people_query_add_id"
+            style="@style/style_id_single_line_18_words"
+            android:hint="请填写要查询的公民身份证号"
+            />
+
+
+        <!--<addText-->
+        <!--android:id="@+id/et_name"-->
+        <!--style="@style/style_query_et_id"-->
+        <!--android:hint="请填写姓名"-->
+        <!--android:maxLength="20"-->
+        <!--android:maxLines="1"/>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/et_sex"-->
+        <!--style="@style/style_query_et_sex"-->
+        <!--android:hint="请选择性别"/>-->
+
+        <!--&lt;!&ndash;民族&ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:id="@+id/et_ethnic"-->
+        <!--style="@style/style_query_tv_ethnic"-->
+        <!--android:hint="请选择民族"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/et_attributes"-->
+        <!--style="@style/style_query_et_id"-->
+        <!--android:drawableRight="@mipmap/ic_arrow_down"-->
+        <!--android:focusable="false"-->
+        <!--android:hint="请选择人员属性"/>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/et_state"-->
+        <!--style="@style/style_query_et_sex"-->
+        <!--android:hint="人员状态"/>-->
+
+        <!--&lt;!&ndash;民族&ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:id="@+id/et_is_effective"-->
+        <!--style="@style/style_query_tv_ethnic"-->
+        <!--android:hint="是否有效"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/et_register_date_start"-->
+        <!--style="@style/style_query_et_ethnic_date_start"-->
+        <!--android:hint="登记日期起"/>-->
+
+        <!--&lt;!&ndash;民族&ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:id="@+id/et_register_date_end"-->
+        <!--style="@style/style_query_et_ethnic_date_start"-->
+        <!--android:hint="登记日期止"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/tv_flow_people_query_add_query"-->
+                <!--style="@style/style_query_tv_bottom"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:background="#00BBEE"-->
+                <!--android:text="查询"/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/tv_flow_people_query_add_re_input"-->
+                <!--style="@style/style_query_tv_bottom"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:background="#E94D4E"-->
+                <!--android:text="重置"/>-->
+
+        <!--</LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tv_flow_people_query_add_query"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/base_title_bg"
+                android:text="查询"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/tv_flow_people_query_add_re_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:text="重置"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

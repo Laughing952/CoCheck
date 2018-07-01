@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="style_id_single_line_18_words" parent="style_query_et_id">
+        <item name="android:digits">0123456789xX</item>
+        <item name="android:maxLength">18</item>
+        <item name="android:maxLines">1</item>
+    </style>
+</resources>

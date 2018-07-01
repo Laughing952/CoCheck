@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="content"
+            type="java.lang.String"/>
+
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:text="本套系统分为安卓版和电脑版（windows操作系统）"
+                android:textColor="#000"
+                android:textSize="17sp"/>
+
+            <TextView
+                style="@style/style_read_me_title"
+                android:text="1.登录"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        用户通过输入用户名，密码进行登录。"/>
+
+            <TextView
+
+                style="@style/style_read_me_title"
+                android:text="2.快速搜索"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        点击首页搜索框，输入15位或18位身份证号，点击搜索图标，即可查询人员基本信息。如果身份信息没有显示，则请您检查身份证号是否正确。如果确认身份证号无误，则此系统中没有此人的信息。"/>
+
+            <TextView
+
+                style="@style/style_read_me_title"
+                android:text="3.流动人口登记"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        点击App首页底部 业务 ——> 流动人口管理 ——> 流动人口登记。  在搜索框输入15位或18位身份证号，点击“查询”或手机软键盘的“回车”键，即可进入登记人员流动信息页面。"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        如果提示“身份证信息不存在”，则请您检查身份证号是否正确。如果确认身份证号无误，则本系统中没有此人的基本信息。没有基本信息则不能进行流动人口管理（不能进行登记，编辑，查询，注销等操作）。"/>
+
+            <TextView
+                style="@style/style_read_me_title"
+                android:text="4.流动人口编辑"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        点击App首页底部 业务 ——> 流动人口管理 ——> 流动人口编辑。  在搜索框输入15位或18位身份证号，点击“查询”或手机软键盘的“回车”键，即可进入人员流动信息编辑列表页面。点击需要编辑的条目，进入编辑页面进行编辑，之后点击保存即可。"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        如果显示“没有数据”，则请您检查身份证号是否正确。如果确认身份证号无误，则本系统中没有此人的基本信息。没有基本信息则不能进行流动人口管理（不能进行登记，编辑，查询，注销等操作）。"/>
+
+            <TextView
+
+                style="@style/style_read_me_title"
+                android:text="5.流动人口注销"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        点击App首页底部 业务 ——> 流动人口管理 ——> 流动人口注销。  在搜索框输入15位或18位身份证号，点击“查询”或手机软键盘的“回车”键，即可进入人员流动信息注销列表页面。点击需要注销的条目，进入注销页面进行注销，点击注销即可。"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        如果显示“没有数据”，则请您检查身份证号是否正确。如果确认身份证号无误，则本系统中没有此人的基本信息。没有基本信息则不能进行流动人口管理（不能进行登记，编辑，查询，注销等操作）。"/>
+
+            <TextView
+
+                style="@style/style_read_me_title"
+                android:text="6.流动人口查询"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        点击App首页底部 业务 ——> 流动人口管理 ——> 流动人口查询。  点击右上角搜索图标，在搜索框输入15位或18位身份证号，或者输入姓名及其他信息。点击“查询”或手机软键盘的“回车”键，即可进入查询人员流动信息页面。点击需要查看的条目，进入详情页面进行查看。"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        注意：身份证号与姓名必须最少填入一项，其他信息为筛选信息，可以不必填写。"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        如果显示“没有数据”，则请您检查身份证号是否正确。如果确认身份证号无误，则本系统中没有此人的基本信息。没有基本信息则不能进行流动人口管理（不能进行登记，编辑，查询，注销等操作）。"/>
+
+            <TextView
+
+                style="@style/style_read_me_title"
+                android:text="7.我的"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        点击App首页底部 我的 ——> 进行用户基本信息保存，如有需要使用，则系统会从此处来获取，避免用户手动输入带来的麻烦。"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        注意：此页面信息系统会自动保存，app卸载后此页面的信息将会被删除。"/>
+
+
+            <TextView
+
+                style="@style/style_read_me_title"
+                android:text="8.登记历史"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        点击App首页底部 业务 ——> 登记历史 此页面展示app用户最近登记的流动人员。"/>
+
+            <TextView
+
+                style="@style/style_read_me_title"
+                android:text="9.人像比对"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        点击App首页底部 业务 ——> 人像比对 ——> 人像比对 点击进入人像比对页面。点击页面上的人头像，从手机图库选择一张人像或点击左上角摄像机图像进行拍照，之后拖动人像进入圆形区域，也可双手指进行相片的放大与缩小。点击右上角“确认”，后人像选择完毕。之后填写其他信心及选择比对库进行比对。比对结果会返回相似度较高的人的人像。"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        注意：请选择人的正脸并且清晰地照片进行比对。比对时间会比较长（通常不超过30秒）请您耐心等待，并保证手机网络正常。如果超过60秒则请您不要再等待，考虑重新发起人像比对（过程同上），或更换比对库或比对用的人像等。"/>
+
+            <TextView
+
+                style="@style/style_read_me_title"
+                android:text="10.比对数据"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        记录您曾经比对过的人员图像，以供查看。"/>
+
+            <TextView
+
+                style="@style/style_read_me_title"
+                android:text="11.协查"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        被协查的人员信息首先要进行流动人口登记，之后才可以进行协查。如需使用协查功能请您在电脑系统进行操作。"/>
+
+            <TextView
+
+                style="@style/style_read_me_title"
+                android:text="12.使用说明"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        介绍app的常用功能，即为您现在正在阅读的页面。"/>
+
+            <TextView
+
+                style="@style/style_read_me_title"
+                android:text="13.版本更新"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        点击App首页底部 我的 ——> 右上角图标 ——> 版本更新 点击进行app的更新，如果有新版本，则会覆盖安装此App。此时，用户名，密码需要重新输入。"/>
+
+            <TextView
+
+                style="@style/style_read_me_title"
+                android:text="14.退出"/>
+
+            <TextView
+                style="@style/style_read_me_content"
+                android:text="        点击App首页底部 我的 ——> 右上角图标 ——> 退出登录 点击进行退出。再次登录时用户名，密码需要重新输入。"/>
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

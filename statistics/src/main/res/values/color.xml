@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray">#999999</color>
+    <color name="blue">#009cff</color>
+    <color name="red">#e94d4d</color>
+    <color name="green">#01c44a</color>
+    <color name="pink">#ea80a4</color>
+    <color name="lucency_blue">#40009cff</color>
+    <color name="lucency_red">#40e94d4d</color>
+</resources>

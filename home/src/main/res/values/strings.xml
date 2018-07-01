@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">home</string>
+    <string name="toast_error_id_card">身份证格式不正确！</string>
+    <string name="log_out_query_no_data">没有此人登记信息</string>
+</resources>

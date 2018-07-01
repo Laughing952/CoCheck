@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#ffffff</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#4F5457</color>
+    <!--个人中心-圆心头像使用颜色-->
+    <color name="colorPhoto">#4F5457</color>
+    <!-- 个人中心-->
+    <color name="color_main_bg_white">#ffffff</color>
+    <!--主文字黑色-->
+    <color name="color_main_text_light_black">#666666</color>
+    <!--分割线-->
+    <color name="color_divide_line_black">#666666</color>
+    <!--文字淡黑色-->
+    <color name="color_main_text_light_gray">#999999</color>
+    <!--橘色（Parking的颜色及按钮等的颜色）-->
+    <color name="color_edit_cursor">#EF8627</color>
+    <!--透明色-->
+    <color name="transparent">#00ffffff</color>
+    <color name="lightGray">#cccccc</color>
+    <color name="white">#ffffff</color>
+    <color name="greenButton">#01C44A</color>
+    <color name="base_title_bg">#009cff</color>
+    <color name="bg_person_info_gray">#cccccc</color>
+    <!--一般人员背景颜色-->
+    <color name="blue_deep">#009CFE</color>
+    <color name="red">#e94d4d</color>
+    <color name="black">#333333</color>
+    <color name="lucency_black">#66333333</color>
+</resources>

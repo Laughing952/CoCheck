@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--人像查询-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="content"
+            type="java.lang.String"/>
+
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <ScrollView
+            android:id="@+id/sv_people_photo_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F5F6F8"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="8dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_head_img"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/ic_head_normal"/>
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_head_img"
+                        android:layout_centerInParent="true"
+                        android:text="点击选择头像"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp"
+                    />
+                <!--性别-->
+                <TextView
+                    android:id="@+id/et_people_photo_query_sex"
+                    style="@style/style_query_et_id"
+                    android:drawableRight="@mipmap/ic_arrow_down"
+                    android:focusable="false"
+                    android:hint="请选择性别"/>
+
+
+                <!--年龄起-->
+
+                <TextView
+                    android:id="@+id/et_people_photo_query_age_start"
+                    style="@style/style_query_et_id"
+                    android:drawableRight="@mipmap/ic_calendar_icon"
+                    android:focusable="false"
+                    android:hint="年龄起"/>
+
+
+                <!--年龄止-->
+
+                <TextView
+                    android:id="@+id/et_people_photo_query_age_end"
+                    style="@style/style_query_et_id"
+                    android:drawableRight="@mipmap/ic_calendar_icon"
+                    android:focusable="false"
+                    android:hint="年龄止"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/color_main_bg_white"
+                    android:orientation="vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="比对库"
+                        android:gravity="center_vertical"
+                        android:textColor="#999999"
+                        android:textSize="14sp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="新疆二代证人口照片库"
+                            android:textColor="#333333"
+                            android:textSize="15sp"/>
+
+
+                        <ImageButton
+                            android:id="@+id/iv_2nd_generation_button"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_check_button"
+                            />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="新疆常住人口照片库"
+                            android:textColor="#333333"
+                            android:textSize="15sp"/>
+
+
+                        <ImageButton
+                            android:id="@+id/iv_permanent_residence_button"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_check_button"
+                            />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tv_query"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="@color/blue_200"
+            android:gravity="center"
+            android:text="立即比对"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--查询列表-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#F5F6F8"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_query_list_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="阿里木 买买提"
+                android:textColor="#000"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/iv_image_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_query_list_name"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_man"/>
+
+            <TextView
+                android:id="@+id/tv_query_list_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="610112198707064567"
+                android:textColor="#000"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_query_list_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="一般人员"
+                android:textColor="#4EB6FE"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_query_list_ethnic"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="维吾尔族"
+                android:textColor="#000"
+                android:textSize="14sp"/>
+            <!--已注销或未注销状态-->
+            <TextView
+                android:id="@+id/tv_query_list_state"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="未注销"
+                android:textColor="#000"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

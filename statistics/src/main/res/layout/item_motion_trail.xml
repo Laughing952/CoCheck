@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.statistics.ui.viewmodel.MotionTrailViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:text="暂（居）住处所"
+                android:textColor="@color/bg_person_info_gray" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:text="暂（居）住事由"
+                android:textColor="@color/bg_person_info_gray" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_person_info_ll">
+
+            <TextView
+                style="@style/style_person_info_tv"
+                android:text="@{viewModel.tabernacle}" />
+
+            <TextView
+                style="@style/style_person_info_tv"
+                android:text="@{viewModel.temporaryReason}" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:text="流入时间"
+                android:textColor="@color/bg_person_info_gray" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:text="拟居住时间"
+                android:textColor="@color/bg_person_info_gray" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_person_info_ll">
+
+            <TextView
+                style="@style/style_person_info_tv"
+                android:text="@{viewModel.inletTime}" />
+
+            <TextView
+                style="@style/style_person_info_tv"
+                android:text="@{viewModel.planDate}" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="bottom"
+            android:text="从事职业"
+            android:textColor="@color/bg_person_info_gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:text="@{viewModel.profession}"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="暂（居）住地详细信息"
+            android:textColor="@color/bg_person_info_gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="@{viewModel.tabernacleAddress}"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">business</string>
+    <string name="click_details">点击查看更多详情</string>
+    <string name="basic_info">基本信息</string>
+    <string name="ID_card_No">身份证号码</string>
+    <string name="nation">民族</string>
+    <string name="date_of_birth">出生日期</string>
+    <string name="stature">身高</string>
+    <string name="bloodType">血型</string>
+    <string name="eduLevel">文化程度</string>
+    <string name="marriage">婚姻状况</string>
+    <string name="political">政治面貌</string>
+    <string name="workPlace">服务处所</string>
+    <string name="careers">职业</string>
+    <string name="householdPolice">户籍地址</string>
+    <string name="householdArea">户籍责任区单位</string>
+    <string name="householdAreaTel">警务室民警联系电话</string>
+    <string name="community">户籍责任区社区</string>
+    <string name="community_tel">社区干部联系电话</string>
+    <string name="title_person_data">人员信息</string>
+    <string name="log_out_query_no_data">没有此人登记信息</string>
+    <string name="dialog_select_loging">正在注销请稍后......</string>
+</resources>

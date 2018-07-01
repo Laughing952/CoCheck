@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.unistrong.business">
+
+    <application>
+        <activity android:name=".ui.activity.A_Flow_People_Add"/>
+        <activity android:name=".ui.activity.A_People_Photo_Comparison"/>
+        <activity android:name=".ui.activity.A_Flow_People_Query"/>
+        <activity android:name=".ui.activity.A_Flow_People_Edit"/>
+        <activity android:name=".ui.activity.A_People_Photo_Query"/>
+        <activity android:name=".ui.activity.A_People_Photo_Comparison_Data"/>
+        <activity android:name=".ui.activity.A_Move_People_Management_Details"/>
+        <activity android:name=".ui.activity.A_Move_People_Management"/>
+        <activity android:name=".ui.activity.A_Flow_People_Add_History"/>
+        <activity android:name=".ui.activity.A_Flow_People_Query_Edit"/>
+        <activity android:name=".ui.activity.A_Flow_People_Query_Log_Out"/>
+        <activity android:name=".ui.activity.A_Person_Info"/>
+        <activity android:name=".ui.activity.A_Flow_PeoPle_Query_List"/>
+        <activity android:name=".ui.activity.A_People_Photo_Query_Result"/>
+        <activity android:name=".ui.activity.A_Flow_People_Query_Add"/>
+        <activity android:name=".ui.activity.A_People_Base_Info"/>
+        <activity android:name=".ui.activity.A_Flow_People_Edit_List"/>
+        <activity android:name=".ui.activity.A_Flow_People_Log_Out_List"/>
+        <activity android:name=".ui.activity.A_Flow_People_Log_Out"/>
+    </application>
+
+</manifest>

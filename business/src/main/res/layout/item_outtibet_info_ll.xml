@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="疆外活动轨迹"
+        android:textColor="@color/base_title_bg"/>
+
+    <View
+        style="@style/style_flow_people_1_ps_line_grey_no_margin"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="阿里木*买买提"/>
+
+    <LinearLayout style="@style/style_person_info_ll">
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="暂（居）住处所"
+            android:textColor="@color/bg_person_info_gray"/>
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="暂（居）住事由"
+            android:textColor="@color/bg_person_info_gray"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_person_info_ll">
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="企事业单位"/>
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="因公出差"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_person_info_ll">
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="流入时间"
+            android:textColor="@color/bg_person_info_gray"/>
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="拟居住时间"
+            android:textColor="@color/bg_person_info_gray"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_person_info_ll">
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="2018-2-13 12:34:23"/>
+
+        <TextView
+            style="@style/style_person_info_tv"
+            android:text="六个月以下"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:text="从事职业"
+        android:textColor="@color/bg_person_info_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:text="演员、歌手"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:text="暂（居）住地_详细地址"
+        android:textColor="@color/bg_person_info_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:text="北京市市辖区朝阳区人民路22号2栋4单元1208号"/>
+</LinearLayout>

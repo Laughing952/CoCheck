@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="content"
+            type="java.lang.String"/>
+
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@mipmap/ic_my_center_bg"
+
+            >
+
+            <ImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/ic_my_center_setting"/>
+
+            <!--<com.commondata.takephoto.view.CircleImageview-->
+            <!--android:id="@+id/iv_head_img"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:contentDescription="@string/app_name"-->
+            <!--android:src="@mipmap/ic_head_normal"-->
+            <!--app:civ_border_color="#ffffff"-->
+            <!--app:civ_border_width="1.5dp"/>-->
+
+            <ImageView
+                android:id="@+id/iv_head_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_head_normal"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="1.5dp"/>
+
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_head_img"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:src="@mipmap/ic_launcher"/>-->
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_head_img"
+                android:layout_centerInParent="true"
+                android:text=""
+                />
+        </RelativeLayout>
+        <!--姓名-->
+        <RelativeLayout
+            android:id="@+id/rl_persanl_center_user_name"
+            style="@style/style_common_line_style"
+            android:layout_width="match_parent"
+            android:background="@color/color_main_bg_white">
+
+            <ImageView
+                android:id="@+id/iv_personal_center_user_name"
+                style="@style/style_image_view_user_info"
+                android:src="@mipmap/ic_my_center_name"/>
+
+
+            <TextView
+                style="@style/style_width_height_wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_personal_center_user_name"
+                android:text="姓名"
+                android:textColor="@color/color_main_text_light_black"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/edt_personal_info_edit_user_name"
+                style="@style/style_edit_text_user_info"
+                android:layout_toLeftOf="@+id/iv_arrow2"
+                android:hint="请输入姓名"
+                android:maxLength="13"
+                />
+
+            <ImageView
+                android:id="@id/iv_arrow2"
+                style="@style/style_width_height_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pic_arrows_right"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/style_flow_people_1_ps_line_grey"></View>
+
+        <!--性别-->
+        <RelativeLayout
+            android:id="@+id/rl_persanl_center_sex"
+            style="@style/style_common_line_style"
+            android:layout_width="match_parent"
+            android:background="@color/color_main_bg_white">
+
+            <ImageView
+                android:id="@+id/iv_personal_center_sex"
+                style="@style/style_image_view_user_info"
+                android:src="@mipmap/ic_my_center_sex"/>
+
+            <TextView
+                style="@style/style_width_height_wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_personal_center_sex"
+                android:text="性别"
+                android:textColor="@color/color_main_text_light_black"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/edt_personal_info_edit_sex"
+                style="@style/style_edit_text_user_info"
+                android:layout_toLeftOf="@+id/iv_arrow2"
+                android:digits="男女"
+                android:hint="@string/chooseSex"
+                android:maxLength="1"
+                />
+
+            <ImageView
+                android:id="@id/iv_arrow2"
+                style="@style/style_width_height_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pic_arrows_right"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/style_flow_people_1_ps_line_grey"></View>
+
+        <!--手机号码-->
+        <RelativeLayout
+            android:id="@+id/rl_persanl_center_phone"
+            style="@style/style_common_line_style"
+            android:layout_width="match_parent"
+            android:background="@color/color_main_bg_white">
+            <!--<item name="android:layout_alignTop">@+id/textView9</item>-->
+            <ImageView
+                android:id="@+id/iv_personal_center_phone"
+                style="@style/style_image_view_user_info"
+                android:src="@mipmap/ic_my_center_phone_number"/>
+
+            <TextView
+                style="@style/style_width_height_wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_personal_center_phone"
+                android:text="请输入手机号码"
+                android:textColor="@color/color_main_text_light_black"
+                android:textSize="16sp"/>
+
+            <!--android:phoneNumber="true"-->
+
+            <EditText
+                android:id="@+id/edt_personal_info_edit_phone"
+                style="@style/style_edit_text_user_info"
+                android:layout_toLeftOf="@+id/iv_arrow2"
+                android:autoLink="phone"
+                android:digits="0123456789"
+                android:maxLength="11"
+                android:hint="手机号码"
+                />
+
+            <ImageView
+                android:id="@id/iv_arrow2"
+                style="@style/style_width_height_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pic_arrows_right"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/style_flow_people_1_ps_line_grey"></View>
+        <!--单位区划-->
+        <RelativeLayout
+            android:id="@+id/rl_personal_center_work_unit"
+            style="@style/style_common_line_style"
+            android:layout_width="match_parent"
+            android:background="@color/color_main_bg_white">
+
+            <ImageView
+                android:id="@+id/iv_personal_center_work_unit"
+                style="@style/style_image_view_user_info"
+                android:src="@mipmap/ic_my_center_company"/>
+
+            <TextView
+                style="@style/style_width_height_wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_personal_center_work_unit"
+                android:text="单位区划"
+                android:textColor="@color/color_main_text_light_black"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/edt_personal_info_edit_work_unit"
+                style="@style/style_edit_text_user_info"
+                android:layout_toLeftOf="@+id/iv_arrow2"
+                android:hint="请输入单位区划"
+                />
+
+            <ImageView
+                android:id="@id/iv_arrow2"
+                style="@style/style_width_height_wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pic_arrows_right"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/style_flow_people_1_ps_line_grey"></View>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?><!--流动人口列表-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.unistrong.business.ui.viewmodel.FlowPeopleHistoryViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginBottom="1px"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_history_list_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@{viewModel.name}"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_history_image_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_history_list_name"
+                android:scaleType="center"
+                app:res="@{viewModel.sex}" />
+
+            <TextView
+                android:id="@+id/tv_history_list_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@{viewModel.idNum}"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_history_list_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@{viewModel.personAttrType}"
+                android:textColor="@{viewModel.attrTypeColor}"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_history_list_ethnic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@{viewModel.nation}"
+                android:textSize="13sp" />
+            <!--已注销或未注销状态-->
+            <TextView
+                android:id="@+id/tv_history_list_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@{viewModel.logoutTag}"
+                android:textColor="@{viewModel.logoutTagColor}"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</layout>
